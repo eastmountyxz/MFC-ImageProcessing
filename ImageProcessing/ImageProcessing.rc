@@ -1,0 +1,573 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ImageProcessing.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ImageProcessing.ico"
+IDR_IMAGEPTYPE          ICON    DISCARDABLE     "res\\ImageProcessingDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "显示"
+    BEGIN
+        MENUITEM "双图显示",                    ID_SHOW_TWO
+        MENUITEM "灰度图片",                    ID_SHOW_HD
+    END
+    POPUP "量化"
+    BEGIN
+        MENUITEM "量化 Level-2",                ID_LH_2
+        MENUITEM "量化 Level-4",                ID_LH_4
+        MENUITEM "量化 Level-8",                ID_LH_8
+        MENUITEM "量化 Level-16",               ID_LH_16
+        MENUITEM "量化 Level-32",               ID_LH_32
+        MENUITEM "量化 Level-64",               ID_LH_64
+    END
+    POPUP "采样"
+    BEGIN
+        MENUITEM "图片采样",                    ID_CY
+    END
+    POPUP "直方图"
+    BEGIN
+        MENUITEM "原图直方图",                  ID_ZFT_YT
+    END
+    POPUP "图像点运算"
+    BEGIN
+        POPUP "线性变换"
+        BEGIN
+            MENUITEM "D(B)=D(A)+50",                ID_DYS_XXYD
+            MENUITEM "D(B)=1.5*D(A)",               ID_DYS_XXZQ
+            MENUITEM "D(B)=0.8*D(A)",               ID_DYS_XXJX
+            MENUITEM "D(B)=-1*D(A)+255",            ID_DYS_XXQB
+        END
+        POPUP "非线性变换"
+        BEGIN
+            MENUITEM "D(B)=D(A)*D(A)/255",          ID_DYS_FXXPF
+            MENUITEM "D(B)=D(A)+0.8*D(A)*(255-D(A))/255", ID_DYS_FXXHS
+        END
+        MENUITEM "阈值变换",                    ID_DYS_YZBH
+        MENUITEM "图像均衡化",                  ID_DYS_JHH
+    END
+    POPUP "几何变换"
+    BEGIN
+        MENUITEM "图像平移",                    ID_JHBH_PY
+        MENUITEM "图像翻转",                    ID_JHBH_FZ
+        MENUITEM "图像倒置",                    ID_JHBH_DZ
+        MENUITEM "图像旋转",                    ID_JHBH_TXXZ
+        MENUITEM "中心旋转",                    ID_JHBH_ZXXZ
+        MENUITEM "图像缩放",                    ID_JHBH_SF
+    END
+    POPUP "图像增强"
+    BEGIN
+        POPUP "图像平滑"
+        BEGIN
+            MENUITEM "普通平滑 模板一",             ID_TXZQ_PTPH1
+            MENUITEM "普通平滑 模板二",             ID_TXZQ_PTPH2
+            MENUITEM "高斯平滑",                    ID_TXZQ_GSPH
+            MENUITEM "中指滤波",                    ID_TXZQ_ZZLB
+        END
+        POPUP "图像锐化"
+        BEGIN
+            MENUITEM "Laplacian算子",               ID_RH_Laplacian
+            MENUITEM "Sobel算子",                   ID_RH_Sobel
+            MENUITEM "Prewitt算子",                 ID_RH_Prewitt
+            MENUITEM "Isotropic算子",               ID_RH_Isotropic
+            MENUITEM "高通模板H2",                  ID_RH_GTMB
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ImageProcessing"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ImageProcessing 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG_CY DIALOG DISCARDABLE  0, 0, 209, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图片采样"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,140,44,50,14
+    EDITTEXT        IDC_EDIT_CYX,42,20,53,14,ES_AUTOHSCROLL
+    LTEXT           "X坐标",IDC_STATIC,17,22,22,8
+    LTEXT           "Y坐标",IDC_STATIC,106,22,22,8
+    EDITTEXT        IDC_EDIT_CYY,134,19,55,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_ZFT DIALOG DISCARDABLE  0, 0, 287, 274
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "原始直方图"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,212,242,50,20
+    GROUPBOX        "RGB",IDC_STATIC_RGB,26,14,170,250
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,33,96,154,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,33,177,152,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,34,257,149,1
+    LTEXT           "Red",IDC_STATIC,33,25,13,8
+    LTEXT           "Green",IDC_STATIC,32,100,20,8
+    LTEXT           "Blue",IDC_STATIC,29,180,15,8
+    LTEXT           "像素:",IDC_STATIC,222,30,19,9
+    LTEXT           "Static",IDC_STATIC_XS_RED,245,31,35,8
+    LTEXT           "平均灰度:",IDC_STATIC,206,43,38,9
+    LTEXT           "Static",IDC_STATIC_PJHD_RED,244,43,36,8
+    LTEXT           "中值灰度:",IDC_STATIC,206,55,38,10
+    LTEXT           "Static",IDC_STATIC_ZZHD_RED,245,56,35,8
+    LTEXT           "标准差:",IDC_STATIC,213,68,31,8
+    LTEXT           "Static",IDC_STATIC_BZC_RED,246,69,31,9
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,44,31,143,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,54,106,130,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,46,187,138,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,33,32,1,64
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,185,32,1,66
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,33,106,1,72
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,185,107,1,71
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,184,188,1,70
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,33,188,1,70
+    LTEXT           "像素:",IDC_STATIC,219,103,19,9
+    LTEXT           "平均灰度:",IDC_STATIC,202,116,38,9
+    LTEXT           "Static",IDC_STATIC_XS_GREEN,244,103,36,8
+    LTEXT           "Static",IDC_STATIC_PJHD_GREEN,245,116,35,8
+    LTEXT           "Static",IDC_STATIC_ZZHD_GREEN,245,129,35,8
+    LTEXT           "Static",IDC_STATIC_BZC_GREEN,244,140,35,8
+    LTEXT           "像素:",IDC_STATIC,220,182,19,9
+    LTEXT           "标准差:",IDC_STATIC,210,221,31,8
+    LTEXT           "Static",IDC_STATIC_XS_BLUE,247,183,33,8
+    LTEXT           "Static",IDC_STATIC_PJHD_BLUE,246,194,31,8
+    LTEXT           "Static",IDC_STATIC_ZZHD_BLUE,246,207,28,8
+    LTEXT           "Static",IDC_STATIC_BZC_BLUE,246,220,34,8
+    LTEXT           "红:",IDC_STATIC,206,21,11,8
+    LTEXT           "绿:",IDC_STATIC,206,92,12,10
+    LTEXT           "蓝:",IDC_STATIC,207,170,13,9
+    CONTROL         "",IDC_STATIC_KJ,"Static",SS_ETCHEDFRAME,29,23,163,237
+    LTEXT           "中值灰度:",IDC_STATIC,204,129,39,10
+    LTEXT           "标准差:",IDC_STATIC,212,140,30,8
+    LTEXT           "平均灰度:",IDC_STATIC,204,194,41,9
+    LTEXT           "中值灰度:",IDC_STATIC,202,207,38,8
+END
+
+IDD_DIALOG_PY DIALOG DISCARDABLE  0, 0, 216, 80
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图片平移"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,136,44,52,14
+    EDITTEXT        IDC_EDIT_PYX,42,19,53,14,ES_AUTOHSCROLL
+    LTEXT           "X坐标",IDC_STATIC,17,21,22,8
+    LTEXT           "Y坐标",IDC_STATIC,106,21,22,8
+    EDITTEXT        IDC_EDIT_PYY,134,18,55,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_XZ DIALOG DISCARDABLE  0, 0, 178, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像旋转"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,103,42,50,14
+    EDITTEXT        IDC_EDIT_XZ,21,42,67,14,ES_AUTOHSCROLL
+    LTEXT           "输入要旋转的度数(正整数 0-360之间)",IDC_STATIC,19,20,
+                    129,8
+END
+
+IDD_DIALOG_SF DIALOG DISCARDABLE  0, 0, 207, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像缩放-最近邻插值法"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,119,34,50,14
+    EDITTEXT        IDC_EDIT_SF,37,34,67,14,ES_AUTOHSCROLL
+    LTEXT           "采用最近邻插值法缩放图像(缩放大小0-200%之间)",
+                    IDC_STATIC,14,19,173,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ImageProcessing Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ImageProcessing\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ImageProcessing.EXE\0"
+            VALUE "ProductName", "ImageProcessing 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_CY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DIALOG_ZFT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_DIALOG_PY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_DIALOG_XZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DIALOG_SF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "ImageProcessing\n\nImageP\n\n\nImageProcessing.Document\nImageP Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ImageProcessing"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ImageProcessing.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

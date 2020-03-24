@@ -19,6 +19,10 @@
 [【数字图像处理】七.MFC图像增强之图像普通平滑、高斯平滑、Laplacian、Sobel、Prewitt锐化详解](https://blog.csdn.net/Eastmount/article/details/46378783)  <br />
 
 
+效果图：
+
+<img src="https://img-blog.csdn.net/20150608183302720" height="60%" width="60%" />
+
 ---
 
 By：Eastmount CSDN 2020-03-24

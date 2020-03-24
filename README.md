@@ -10,6 +10,7 @@
 
 <br />
 
+<B>对应文章：</B> <br />
 [【数字图像处理】一.MFC详解显示BMP格式图片](https://blog.csdn.net/Eastmount/article/details/18238863) <br />
 [【数字图像处理】 二.MFC单文档分割窗口显示图片](https://blog.csdn.net/Eastmount/article/details/18987539) <br />
 [【数字图像处理】三.MFC实现图像灰度、采样和量化功能详解](https://blog.csdn.net/Eastmount/article/details/46010637) <br />
@@ -19,9 +20,11 @@
 [【数字图像处理】七.MFC图像增强之图像普通平滑、高斯平滑、Laplacian、Sobel、Prewitt锐化详解](https://blog.csdn.net/Eastmount/article/details/46378783)  <br />
 
 
-效果图：
+<B>效果图：</B>
 
-<img src="https://img-blog.csdn.net/20150608183302720" height="60%" width="60%" />
+<center>
+    <img src="https://img-blog.csdn.net/20150608183302720" height="70%" width="70%" />
+</center>
 
 ---
 

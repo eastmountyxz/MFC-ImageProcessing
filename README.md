@@ -22,9 +22,9 @@
 
 <B>效果图：</B>
 
-<center>
+<div align="center">
     <img src="https://img-blog.csdn.net/20150608183302720" height="70%" width="70%" />
-</center>
+</div>
 
 ---
 

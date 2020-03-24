@@ -8,6 +8,7 @@
 - MFC空间几何变换之图像平移、镜像、旋转、缩放处理
 - MFC图像增强之图像普通平滑、高斯平滑、Laplacian、Sobel、Prewitt锐化处理
 
+<br />
 
 [【数字图像处理】一.MFC详解显示BMP格式图片](https://blog.csdn.net/Eastmount/article/details/18238863) <br />
 [【数字图像处理】 二.MFC单文档分割窗口显示图片](https://blog.csdn.net/Eastmount/article/details/18987539) <br />
